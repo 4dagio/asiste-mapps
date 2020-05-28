@@ -1,0 +1,12 @@
+<h1>Servicio</h1>
+<hr>
+
+
+<div class="card text-center">
+    <div class="card-header">
+        Ubicación
+    </div>
+    <agm-map [latitude]="service.lat" [longitude]="service.long">
+        <agm-marker [latitude]="service.lat" [longitude]="service.long"></agm-marker>
+    </agm-map>
+</div>
