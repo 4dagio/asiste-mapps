@@ -1,12 +1,14 @@
-<h1>Servicio</h1>
 <hr>
 
 
 <div class="card text-center">
     <div class="card-header">
-        Ubicación
+        <h4>Ubicación de tu servicio : {{ service }}</h4>
     </div>
-    <agm-map [latitude]="service.lat" [longitude]="service.long">
-        <agm-marker [latitude]="service.lat" [longitude]="service.long"></agm-marker>
+    <agm-map [latitude]="lat" [longitude]="long">
+        <agm-marker [latitude]="lat" [longitude]="long"></agm-marker>
     </agm-map>
+    <div class="card-footer">
+        <h5>Nombre del colaborador : {{ colaborador }}</h5>
+    </div>
 </div>

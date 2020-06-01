@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { HomeComponent } from './components/home/home.component';
 
 const APP_ROUTES: Routes = [
-    { path: 'location/:lat/:long/:service', component: HomeComponent},
+    { path: 'location/:params', component: HomeComponent},
     { path: '**', pathMatch: 'full', redirectTo: 'location'}
 ];
 
