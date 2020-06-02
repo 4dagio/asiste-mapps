@@ -10,10 +10,10 @@ import { element } from 'protractor';
 export class HomeComponent implements OnInit {
   
   params: string;
-  lat: number;
-  long: number;
+  lat: any;
+  long: any;
   service: string;
-  estado: string;
+  estado: any;
   colaborador: string;
   paramsData: any;
   id: string;
@@ -41,7 +41,7 @@ export class HomeComponent implements OnInit {
   };
 
  refreshlocation() { 
-  this.api.reloadLocation(this.id).subscribe((data: any[])=>{
+  this.api.reloadLocation(this.id).subscribe((data: any)=>{
     this.lat = data.lat;
     this.long = data.long;
     this.estado = data.estado;

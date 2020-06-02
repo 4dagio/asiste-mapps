@@ -9,13 +9,9 @@ export class ApiService {
 
 private SERVER_URL = "http://3.15.234.247:8080/AsistePlatform";
 
-
-
 constructor(private httpClient: HttpClient) {
     
 }
-
-
 
 public reloadLocation(id: string){
     
