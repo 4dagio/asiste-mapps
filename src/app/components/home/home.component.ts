@@ -26,7 +26,6 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.params = atob(this.rutaActiva.snapshot.params.params);
     let paramsFormat = this.params.split("|");
-    console.log(paramsFormat);
     this.lat = Number(paramsFormat[0]);
     this.long =  Number(paramsFormat[1]);
     this.service = paramsFormat[2];
