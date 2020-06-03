@@ -17,6 +17,7 @@ export class HomeComponent implements OnInit {
   colaborador: string;
   paramsData: any;
   id: string;
+  zoom: number;
 
   constructor(private rutaActiva: ActivatedRoute, public api: ApiService) { 
 
@@ -32,6 +33,7 @@ export class HomeComponent implements OnInit {
     this.estado = paramsFormat[3];
     this.colaborador = `${paramsFormat[4]} ${paramsFormat[5]}`;
     this.id = paramsFormat[6];
+    this.zoom = 15;
 
     if(this.estado === "En curso" || this.estado === "Ejecución") {
         setTimeout(() => {

@@ -5,7 +5,7 @@
     <div class="card-header">
         <h4>Ubicación de tu servicio : {{ service }}</h4>
     </div>
-    <agm-map [latitude]="lat" [longitude]="long">
+    <agm-map [latitude]="lat" [longitude]="long" [zoom]="zoom">
         <agm-marker [latitude]="lat" [longitude]="long"></agm-marker>
     </agm-map>
     <div class="card-footer">
